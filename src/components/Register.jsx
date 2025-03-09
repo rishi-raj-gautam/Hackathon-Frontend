@@ -107,13 +107,16 @@ export default function Register() {
                         </button>
                         
                         <div className="text-center">
-                            <p className="text-sm text-gray-600">
-                                Already have an account?{' '}
-                                <a href="/login" className="text-indigo-600 hover:text-indigo-800 font-medium">
-                                    Login here
-                                </a>
-                            </p>
-                        </div>
+            <p className="text-sm text-gray-600">
+                Already have an account?{" "}
+                <span
+                    onClick={() => navigate("/login")}
+                    className="text-indigo-600 hover:text-indigo-800 font-medium cursor-pointer"
+                >
+                    Login here
+                </span>
+            </p>
+        </div>
                     </div>
                 </div>
             </div>
